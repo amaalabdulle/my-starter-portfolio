@@ -1,0 +1,167 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+h1 {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.header-container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.about-text {
+    background-color: skyblue;
+    border: 1px;
+    padding: 20px;
+    width: 50%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.about-text p {
+font-size: 20px;
+}
+
+.profile-image {
+  max-width: 20%;
+  padding: 20px;
+}
+
+.subHeading {
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 300px;
+    margin: 5px auto;
+  }
+.categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+#project1 {
+    grid-area: project1;
+    background-image: url(../images/02-portfolio-1.jpg);
+  }
+#project2 {
+    grid-area: project2;
+    background-image: url(../images/02-portfolio-2.jpg);
+  }
+#project3 {
+    grid-area: project3;
+    background-image: url(../images/02-portfolio-3.jpg);
+  }
+#project4 {
+    grid-area: project4;
+    background-image: url(../images/02-portfolio-4.jpg);
+  }
+#project5 {
+    grid-area: project5;
+    background-image: url(../images/weather.png);
+  }
+#project6 {
+    grid-area: project6;
+    background-image: url(../images/imgonline-com-ua-resize-mZ9Djuzc9RDGT.png);
+  }
+#project7 {
+    grid-area: project7;
+    background-image: url(../images/02-run-buddy.jpg)
+  }
+#project8 {
+    grid-area: project8;
+    background-image: url(../images/02-hero-bg.jpg);
+  }
+
+#categoryGrid {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "project1 project2 project3 project4"
+    "project5 project6 project7 project8";
+  }
+
+.categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+.heading {
+    padding: 15px;
+    height: 25px;
+    color: black;
+    font-size: 18px;
+    border-bottom: 5px solid grey;
+  }
+
+@media only screen and (max-width: 1000px) {
+    #navBar {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    #categoryGrid {
+      grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5"
+      "project6"
+      "project7"
+      "project8";
+    }
+  }
+
+.contact {
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 300px;
+    margin: 5px auto;
+  }
+
+.info p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
