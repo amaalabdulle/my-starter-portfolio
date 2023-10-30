@@ -70,39 +70,43 @@ font-size: 20px;
     cursor: pointer;
     display: grid;
     align-content: end;
+    object-fit: cover;
   }
 
-#project1 {
-    grid-area: project1;
+#marketing-website {
+    grid-area: marketing-website;
     background-image: url(../images/02-portfolio-1.jpg);
   }
-#project2 {
-    grid-area: project2;
-    background-image: url(../images/02-portfolio-2.jpg);
+#netflix {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    grid-area: netflix;
+    background-image: url();
   }
-#project3 {
-    grid-area: project3;
-    background-image: url(../images/02-portfolio-3.jpg);
+#youtube {
+    grid-area: youtube;
+    background-image: url(../images/youtube.jpg);
   }
-#project4 {
-    grid-area: project4;
-    background-image: url(../images/02-portfolio-4.jpg);
+#disney {
+    grid-area: disney;
+    background-image: url(../images/disney.jpeg);
   }
-#project5 {
-    grid-area: project5;
-    background-image: url(../images/weather.png);
+#spotify {
+    grid-area: spotify;
+    background-image: url(../images/spotify.png);
   }
-#project6 {
-    grid-area: project6;
-    background-image: url(../images/imgonline-com-ua-resize-mZ9Djuzc9RDGT.png);
+#bbciplayer {
+    grid-area: bbciplayer;
+    background-image: url(../images/bbc.png);
   }
-#project7 {
-    grid-area: project7;
-    background-image: url(../images/02-run-buddy.jpg)
+#channel4 {
+    grid-area: channel4;
+    background-image: url(../images/4.jpeg)
   }
-#project8 {
-    grid-area: project8;
-    background-image: url(../images/02-hero-bg.jpg);
+#f1tv {
+    grid-area: f1tv;
+    background-image: url(../images/f1.jpeg);
   }
 
 #categoryGrid {
@@ -111,12 +115,12 @@ font-size: 20px;
     grid-template-rows: 300px 300px 300px 300px 300px 300px ;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "project1 project1"
-    "project1 project1"
-    "project2 project3"
-    "project4 project5"
-    "project6 project7"
-    "project8 project8"
+    "marketing-website marketing-website"
+    "marketing-website marketing-website"
+    "netflix youtube"
+    "disney spotify"
+    "bbciplayer channel4"
+    "f1tv f1tv"
     ;
   }
 
@@ -139,6 +143,9 @@ font-size: 20px;
     border-bottom: 5px solid grey;
   }
 
+
+
+
 @media only screen and (max-width: 1000px) {
     #navBar {
       display: none;
@@ -153,14 +160,14 @@ font-size: 20px;
       grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
       grid-template-columns: 1fr;
       grid-template-areas:
-      "project1"
-      "project2"
-      "project3"
-      "project4"
-      "project5"
-      "project6"
-      "project7"
-      "project8";
+      "marketing-website"
+      "netflix"
+      "youtube"
+      "disney"
+      "spotify"
+      "bbciplayer"
+      "channel4"
+      "f1tv";
     }
   }
 
