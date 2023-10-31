@@ -12,7 +12,7 @@ No steps required to install project.
 
 You can directly view my projects (or placeholders) by clicking on the image which will redirect you to the webpage.
 
-![alt text](../my-starter-portfolio/starter/images/Screenshot%202023-10-31%20at%2021.24.03.png)
+![alt text](my-starter-portfolio/starter/images/Screenshot%202023-10-31%20at%2021.24.03.png)
 
 Clicking on the navigation bar will move along my portfolio. Website will adapt depending on screensize.
 
