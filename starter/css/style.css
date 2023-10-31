@@ -62,100 +62,53 @@ font-size: 20px;
     width: 300px;
     margin: 5px auto;
   }
-.
 
-
-.flex-container {
-    max-width: 1224px;
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
 }
 
-.content {
-  position: absolute; /* Position the background text */
-  bottom: 200px; /* At the bottom. Use top:0 to append it to the top */
-  background: rgba(255,255,255,0.5);
-  color: white;
-  width: 25%; /* Full width */
-  height: 5%;
-  padding: 8px; /* Some padding */
+
+.project1 {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  
 }
-
-.content2 {
-  position: absolute; /* Position the background text */
-  bottom: 200px;
-  background: rgba(255,255,255,0.5);
-  color: white; 
-  width: 10%; /* Full width */
-  height: 5%;
-  padding: 8px; /* Some padding */
-}
-
-.content3 {
-  position: absolute; /* Position the background text */
-  bottom: 50px;
-  background: rgba(255,255,255,0.5);
-  color: white; 
-  width: 10%; /* Full width */
-  height: 5%;
-  padding: 8px; /* Some padding */
-}
-
-.projects {
-    display: flex;
-    padding: 20px;
-}
-
-.main-project {
-    display: flex;
-    padding: 20px;
-}
-
-.main img{
-    width: 100%;
-    height: 100%;
-    object-fit:fill;
-    border-radius: 20px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-    .projects {
-      flex-direction: column;
-    }
-    nav ul li {
-      flex-direction: row;
-    }
-  }
-
 
 .container2 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
   margin: auto;
   overflow: auto;
 }
 
 .projects2 {
-  margin: 20px;
-  border: 1px solid black;
-  float: left:
-  width: 390px
+  grid-column: span 1;
+  display: grid;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.project1 img {
+  width: 1000px;
+  height: 100%;
 }
 
 .projects2 img {
@@ -167,6 +120,43 @@ font-size: 20px;
   padding: 15px;
   text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    text-align: center;
+}
+
+  .project1 {
+    text-align: center;
+}
+  .container2 {
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin: 0;
+}
+  .projects2 {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    text-align: center;
+}
+
+  .project1 {
+    text-align: center;
+}
+  .container2 {
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin: 0;
+}
+  .projects2 {
+  width: 100%;
+}
+}
+
 #contact {
     text-align: center;
     font-size: 20px;
