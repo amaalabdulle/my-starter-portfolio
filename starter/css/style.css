@@ -63,9 +63,9 @@ font-size: 20px;
     margin: 5px auto;
   }
 
-.container {
-  display: flex;
-  align-items: center;
+/**.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   width: 100%;
   margin: auto;
@@ -75,6 +75,7 @@ font-size: 20px;
 
 .project1 {
   grid-column: span 2;
+  grid-row: span 1;
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -87,7 +88,7 @@ font-size: 20px;
 
 .container2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
   width: 1100px;
@@ -96,7 +97,7 @@ font-size: 20px;
 }
 
 .projects2 {
-  grid-column: span 1;
+  grid-column: span 2;
   display: grid;
   flex-direction: column;
   width: 500px;
@@ -104,7 +105,51 @@ font-size: 20px;
   text-align: center;
   padding: 10px;
 }
+**/
 
+.container, .container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+}
+
+
+/**.project1, .projects2 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+**/
+
+.project1 {
+  grid-column: span 2;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.projects2 {
+  grid-column: span 1;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
 
 .project1 img {
   width: 1000px;
@@ -112,7 +157,7 @@ font-size: 20px;
 }
 
 .projects2 img {
-  width: 100%;
+  width: 400px;
   height: 100%;
 }
 
@@ -121,7 +166,7 @@ font-size: 20px;
   text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+/**@media screen and (max-width: 1000px) {
   .container {
     text-align: center;
 }
@@ -149,6 +194,7 @@ font-size: 20px;
 }
   .container2 {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     width: auto;
     margin: 0;
 }
@@ -156,6 +202,25 @@ font-size: 20px;
   width: 100%;
 }
 }
+**/
+
+@media screen and (max-width: 1000px) {
+
+  header .about-container{
+    display: block;
+  }
+  .container, .container2 {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+    margin: 0;
+  }
+
+  .project1, .projects2 {
+    grid-column: span 1;
+  }
+}
+
+
 
 #contact {
     text-align: center;

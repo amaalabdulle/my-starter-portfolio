@@ -13,7 +13,7 @@ No steps required to install project.
 You can directly view my projects (or placeholders) by clicking on the image which will redirect you to the webpage.  Clicking on the navigation bar will move along my portfolio.
 
 
-Link to deployed website: https://amaalabdulle.github.io/accessible-marketing-website/
+Link to deployed website: https://amaalabdulle.github.io/my-starter-portfolio/
 
 ## Credits
 
