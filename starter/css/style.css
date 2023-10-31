@@ -62,116 +62,112 @@ font-size: 20px;
     width: 300px;
     margin: 5px auto;
   }
-.categoryGridArea {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-    cursor: pointer;
-    display: grid;
-    align-content: end;
-    object-fit: cover;
-  }
-
-#marketing-website {
-    grid-area: marketing-website;
-    background-image: url(../images/02-portfolio-1.jpg);
-  }
-#netflix {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-    grid-area: netflix;
-    background-image: url();
-  }
-#youtube {
-    grid-area: youtube;
-    background-image: url(../images/youtube.jpg);
-  }
-#disney {
-    grid-area: disney;
-    background-image: url(../images/disney.jpeg);
-  }
-#spotify {
-    grid-area: spotify;
-    background-image: url(../images/spotify.png);
-  }
-#bbciplayer {
-    grid-area: bbciplayer;
-    background-image: url(../images/bbc.png);
-  }
-#channel4 {
-    grid-area: channel4;
-    background-image: url(../images/4.jpeg)
-  }
-#f1tv {
-    grid-area: f1tv;
-    background-image: url(../images/f1.jpeg);
-  }
-
-#categoryGrid {
-    margin: 0px 5%;
-    display: grid;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "marketing-website marketing-website"
-    "marketing-website marketing-website"
-    "netflix youtube"
-    "disney spotify"
-    "bbciplayer channel4"
-    "f1tv f1tv"
-    ;
-  }
-
-.categoryGridArea {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    cursor: pointer;
-    display: grid;
-    align-content: end;
-  }
-
-.heading {
-    background-color: rgba(0,0,0,0.7);
-    padding: 15px;
-    height: 25px;
-    color: white;
-    font-size: 18px;
-    border-bottom: 5px solid grey;
-  }
+.
 
 
+.flex-container {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+}
 
+.content {
+  position: absolute; /* Position the background text */
+  bottom: 200px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(255,255,255,0.5);
+  color: white;
+  width: 25%; /* Full width */
+  height: 5%;
+  padding: 8px; /* Some padding */
+}
 
-@media only screen and (max-width: 1000px) {
-    #navBar {
-      display: none;
-    }
-    .icons {
-      margin-left: auto;
-    }
-  }
+.content2 {
+  position: absolute; /* Position the background text */
+  bottom: 200px;
+  background: rgba(255,255,255,0.5);
+  color: white; 
+  width: 10%; /* Full width */
+  height: 5%;
+  padding: 8px; /* Some padding */
+}
+
+.content3 {
+  position: absolute; /* Position the background text */
+  bottom: 50px;
+  background: rgba(255,255,255,0.5);
+  color: white; 
+  width: 10%; /* Full width */
+  height: 5%;
+  padding: 8px; /* Some padding */
+}
+
+.projects {
+    display: flex;
+    padding: 20px;
+}
+
+.main-project {
+    display: flex;
+    padding: 20px;
+}
+
+.main img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    border-radius: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
 
 @media only screen and (max-width: 600px) {
-    #categoryGrid {
-      grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-      "marketing-website"
-      "netflix"
-      "youtube"
-      "disney"
-      "spotify"
-      "bbciplayer"
-      "channel4"
-      "f1tv";
+    .projects {
+      flex-direction: column;
+    }
+    nav ul li {
+      flex-direction: row;
     }
   }
 
-.contact {
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: auto;
+  overflow: auto;
+}
+
+.projects2 {
+  margin: 20px;
+  border: 1px solid black;
+  float: left:
+  width: 390px
+}
+
+.projects2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  padding: 15px;
+  text-align: center;
+}
+#contact {
     text-align: center;
     font-size: 20px;
     border-bottom: 1px solid grey;
